@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 
-open(A, "../CENTROMERE.bed") or die $!;
+open(A, "CENTROMERE.gff") or die "CENTROMERE.gff is required";
 
 my %type;
 my %start;
@@ -12,26 +12,35 @@ my @feature;
 my @ids;
 my %total;
 my %typec;
-#my $root = shift;
 my $BOXLEN = 100;
 my $imax=0;
 my $SIZE = 20000;
 my $FLANK = $SIZE/2;
 
+
 #Get the geature of the cntromere and add 20kbp to each end 
+
 while(<A>){
     chomp;
-    my ($chr, $start, $end) = split;
-#    $total{$type} += $end - $start + $SIZE;    
+    next unless /ID=/;
+    my ($chr, undef, $type, $start, $end, undef, undef, undef, $id) = split;
+    next if $type =~ /chromosome/;
+    next unless $id =~ /^ID=/;
+    $id =~ s/^ID=//;
+    $id =~ s/;.*//;
+    #midpoint of feature                                                                                                      
     my $mid = int(($end-$start)/2) + $start;
-    my $id = "CEN" . $chr;
-    $id =~ s/chr//;
-    push(@ids, $id);
+    $type{$id} = $type;
+    #Add flanks to feature & store
+
+    push(@ids, $id); 
     $start{$id} = $mid - $FLANK;
     $end{$id} = $mid + $FLANK;
     $chr{$id} = $chr;
     push(@{$chr2id{$chr}[int($start/1000000)]}, $id);
 }
+
+
 
 #load each file,  cycle through  ids by their chr 
 # Store overlap, more? 

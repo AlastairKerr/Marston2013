@@ -1,4 +1,4 @@
-#Adele Marston 2013 Paper "Shugoshin biases chromosomes for biorientation through condensin recruitment to the pericentromere"
+#Verzijlbergen and Marston 2013: "Shugoshin biases chromosomes for biorientation through condensin recruitment to the pericentromere"
 
 Scripts and program version information. 
 

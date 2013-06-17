@@ -1,5 +1,6 @@
 #!/bin/bash
-#inpout is a fastq file '$1'
+
+#input is a fastq file '$1'
 export DB="sacCer3 location"
 #bwa to align 
 bwa aln $DB $1 -t 20 > $1.sai
@@ -20,7 +21,11 @@ bedtools intersect -v -a $2-rmdup.bam -b rDNA.bed  > $2-rDNA-rmdup.bam
 bedtools intersect -v -a $2-all.bam -b rDNA.bed  > $2-rDNA-all.bam
 
 #Info for rDNA alone
+
+#this was ignored as region nr saturated with reads
 bedtools coverage -abam $2-rmdup.bam -b rDNA.bed -d  > $2-rmdup-rDNA.bed
+
+#This used in figures 
 bedtools coverage -abam $2-all.bam -b rDNA.bed -d  > $2-all-rDNA.bed
 
 

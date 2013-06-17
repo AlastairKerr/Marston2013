@@ -1,4 +1,6 @@
-#Verzijlbergen and Marston 2013: "Shugoshin biases chromosomes for biorientation through condensin recruitment to the pericentromere"
+#Verzijlbergen and Marston 2013: 
+
+Paper title : "Shugoshin biases chromosomes for biorientation through condensin recruitment to the pericentromere"
 
 Scripts and program version information. 
 
@@ -13,8 +15,6 @@ Reference Genome: sacCer3
 Removal of duplicate reads: samtools Version: 0.1.16 (r963:234) 
 
 RPM scaling, bedgraph creation and bed intersections:  bedtools v2.16.2 
-
-Peak calling: macs14 1.4.0rc2 20110214 (Valentine)
 
 bedgraph to bigwig conversion: wigToBigWig v 4 (UCSC  utilities)
 

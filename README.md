@@ -14,8 +14,18 @@ Peak calling: macs14 1.4.0rc2 20110214 (Valentine)
 
 bedgraph to bigwig conversion: wigToBigWig v 4 (UCSC  utilities)
 
-#Included scripts:
+
+# Included scripts:
+
+## Workflows: 
 workflow1.sh : initial mapping and processing 
+
+workflow-each-cen.sh : Plot data for each centromere
+
+workflow-all-cen.sh  : Plot all centromeres together as a boxplot per window
+
+
+## Scripts
 
 Cen-boxplot.pl : generates boxplot data binned around the centromere 
 
@@ -23,13 +33,17 @@ EveryCen-boxplot.pl: Pairwise fold chage data binned around the centromere
 
 plot-everyboxplot.r: Create the plots from EveryCen-boxplot.pl
 
-ui.R and Server.R : shiny server files for Cen-boxplot.pl data 
+AllCen.r  : R script for plotting Cen-boxplot.pl
+
+
+
+
 
 #Data files 
+
 CENTROMERE.gff : Centromere locations 
 
 rDNA.bed  : excluded region
-
 
 
 

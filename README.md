@@ -1,5 +1,9 @@
-#Adele Marston 2013 Paper
-Scripts and program version information. Publication information will be updated
+#Adele Marston 2013 Paper "Shugoshin biases chromosomes for biorientation through condensin recruitment to the pericentromere"
+
+Scripts and program version information. 
+
+Publication information will be updated
+
 
 #Program Versions:
 Mapper: BWA Version: 0.6.1-r104 
@@ -41,9 +45,11 @@ AllCen.r  : R script for plotting Cen-boxplot.pl
 
 #Data files 
 
+fastq files or bam files will be added to GEO or ArrayExpress: Will edit when I have an identifier
+
 CENTROMERE.gff : Centromere locations 
 
 rDNA.bed  : excluded region
 
-
+bedgraphfiles.tgz : bedgraph files to be used with state 2 workflows 
 

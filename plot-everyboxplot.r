@@ -1,23 +1,17 @@
-pmc <- read.table('MutChip_p2.bg-cenboxplot-2-50k', header=T)
-pmi <- read.table('MutInput_p2.bg-cenboxplot-2-50k', header=T)
-pwi <- read.table('WTInput_p2.bg-cenboxplot-2-50k', header=T)
-pwc <- read.table('WTChip_p2.bg-cenboxplot-2-50k', header=T)
+pmc <- read.table('MutChip_p.bg-cenboxplot-2-50k', header=T)
+pmi <- read.table('MutInput_p.bg-cenboxplot-2-50k', header=T)
+pwi <- read.table('WTInput_p.bg-cenboxplot-2-50k', header=T)
+pwc <- read.table('WTChip_p.bg-cenboxplot-2-50k', header=T)
 
 
-rmc <- read.table('MutChip_r2.bg-cenboxplot-2-50k', header=T)
-rmi <- read.table('MutInput_r2.bg-cenboxplot-2-50k', header=T)
+rmc <- read.table('MutChip_r.bg-cenboxplot-2-50k', header=T)
+rmi <- read.table('MutInput_r.bg-cenboxplot-2-50k', header=T)
 
-rwi <- read.table('WTInput_r2.bg-cenboxplot-2-50k', header=T)
-rwc <- read.table('WTChip_r2.bg-cenboxplot-2-50k', header=T)
-
-
+rwi <- read.table('WTInput_r.bg-cenboxplot-2-50k', header=T)
+rwc <- read.table('WTChip_r.bg-cenboxplot-2-50k', header=T)
 
 
-library(ggplot2)
-
-
-
-for(i in c("CEN1","CEN2","CEN3","CEN4","CEN5","CEN6","CEN7","CEN8","CEN9","CEN10","CEN11","CEN12","CEN13","CEN14","CEN15","CENX16"))
+for(i in c("CEN1","CEN2","CEN3","CEN4","CEN5","CEN6","CEN7","CEN8","CEN9","CEN10","CEN11","CEN12","CEN13","CEN14","CEN15","CEN16"))
 {
   pdf(paste(i, "-dupout.pdf", sep=""))
   par(cex.lab=1.4)

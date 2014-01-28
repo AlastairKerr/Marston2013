@@ -1,9 +1,6 @@
 #Verzijlbergen and Marston 2013: 
 
 Paper title : "Shugoshin biases chromosomes for biorientation through condensin recruitment to the pericentromere"
-
-Scripts and program version information. 
-
 Verzijlbergen et al. eLife 2014;3:e01374. DOI: 10.7554/eLife.01374
 
 The data discussed in this publication have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession number  GSE53856 http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE53856 

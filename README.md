@@ -4,8 +4,13 @@ Paper title : "Shugoshin biases chromosomes for biorientation through condensin 
 
 Scripts and program version information. 
 
-Publication information will be updated
+Verzijlbergen et al. eLife 2014;3:e01374. DOI: 10.7554/eLife.01374	
 
+The data discussed in this publication have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession number  GSE53856 (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE53856)
+--
+Edgar R, Domrachev M, Lash AE.
+Gene Expression Omnibus: NCBI gene expression and hybridization array data repository
+Nucleic Acids Res. 2002 Jan 1;30(1):207-10
 
 #Program Versions:
 Mapper: BWA Version: 0.6.1-r104 

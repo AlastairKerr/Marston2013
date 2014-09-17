@@ -46,8 +46,7 @@ AllCen.r  : R script for plotting Cen-boxplot.pl
 
 
 #Data files 
-
-fastq files or bam files will be added to GEO or ArrayExpress: Will edit when I have an identifier
+Most of the  data in this repository is intended to be used as an example for the scripts. For the complete set of data please see the GEO identifier GSE53856: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE53856
 
 CENTROMERE.gff : Centromere locations 
 
